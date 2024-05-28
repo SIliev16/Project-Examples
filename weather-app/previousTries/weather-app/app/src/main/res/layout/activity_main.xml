@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:textSize="24sp"
+        android:textColor="#288dd7" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvTitle"
+        android:textSize="18sp"
+        android:textColor="#98a1a1"
+        android:layout_alignBaseline="@id/tvTitle"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvWelcomeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:text="Welcome back!"
+        android:textSize="20sp"
+        android:textColor="#288dd7"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvWeatherInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcomeBack"
+        android:textSize="16sp"
+        android:textColor="#98a1a1"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
