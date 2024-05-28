@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Number Guessing Game</title>
+</head>
+<body>
+  <h1>Number Guessing Game</h1>
+
+  <p>Player 1, enter a number between 1 and 100:</p>
+  <input type="text" id="player1Input" />
+  <button onclick="player1Guess()">Guess</button>
+
+  <p>Player 2, enter a number between 1 and 100:</p>
+  <input type="text" id="player2Input" />
+  <button onclick="player2Guess()">Guess</button>
+
+  <p id="result"></p>
+
+  <script>
+    // Create a class for the game
+    class NumberGuessingGame {
+      constructor() {
+        this.winningNumber = Math.floor(Math.random() * 100) + 1;
+      }
+
+      player1Guess(guess) {
+        if (guess < this.winningNumber) {
+          return 'Your guess is too low!';
+        } else if (guess > this.winningNumber) {
+          return 'Your guess is too high!';
+        } else {
+          return 'You win!';
+        }
+      }
+
+      player2Guess(guess) {
+        if (guess < this.winningNumber) {
+          return 'Your guess is too low!';
+        } else if (guess > this.winningNumber) {
+          return 'Your guess is too high!';
+        } else {
+          return 'You win!';
+        }
+      }
+    }
+
+    // Create an instance of the game
+    const game = new NumberGuessingGame();
+
+    // Player 1's guess function
+    function player1Guess() {
+      // Get player 1's guess
+      const player1Guess = Number(document.getElementById('player1Input').value);
+
+      // Display the result
+      document.getElementById('result').innerHTML = game.player1Guess(player1Guess);
+    }
+
+    // Player 2's guess function
+    function player2Guess() {
+      // Get player 2's guess
+      const player2Guess = Number(document.getElementById('player2Input').value);
+
+      // Display the result
+      document.getElementById('result').innerHTML = game.player2Guess(player2Guess);
+    }
+  </script>
+</body>
+</html>
+
+
+    
+  

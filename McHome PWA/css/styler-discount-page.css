@@ -1,0 +1,584 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #292929;
+    text-transform: capitalize;
+}
+
+#amaBackground{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(125,118,154);
+}
+
+#frcBackground{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(189,0,0,0.7);
+}
+
+#grcBackground{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(41, 105, 173);
+}
+
+#jpnBackground{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(189,0,0,0.71);
+}
+
+.burgerSlot{
+    width: 60%;
+    z-index: 1;
+    position: relative;
+    top: -199px;
+    margin-left: 19%;
+}
+
+
+.flagText{
+    font-size: xx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -232px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 31%;
+}
+
+#backButton{
+    z-index: 1;
+    border-radius: 27%;
+    width: 15%;
+    height: fit-content;
+    position: absolute;
+    font-size: large;
+    border-color: #ffff;
+    background-color: #ffff;
+    left: 6%;
+    top: 3%;
+    padding: 2%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.flag{
+    background-color: grey;
+    width: 100%;
+    height: 260px;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    box-shadow: 0px 0px 15px;
+}
+
+.randomCodeBox{
+    background-color: #FFBC0D;
+    color: #ffff;
+    text-align: center;
+    width: 38%;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .25rem 0.625rem;
+    line-height: 2.25rem;
+
+    border-radius: 6px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.randomCodeBox p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+}
+
+
+.qrCode{
+    width: 100%;
+    margin-top: 7%;
+}
+
+.qrCodeSection{
+    margin: -2.5% 0 0 0 ;
+}
+
+.qrCode img{
+    width: 50%;
+    height: 200px;
+    margin-left: 25%;
+
+}
+
+.sTwo{
+    margin-top: -50%;
+}
+
+.sThree{
+    margin-top: 15%;
+    margin-bottom: 25%;
+}
+
+.nutritionValue{
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+.nutritionValue2{
+    margin-left: 5%;
+    font-size: 15px;
+}
+.nutritionGrid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    text-align: center;
+    
+}
+
+.gridTitles1{
+    font-weight: bold;
+}
+
+.qrCodeDivider{
+    width: 80%;
+}
+
+
+#new-YorkB{
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    top: -268px;
+    margin-left: 26%;
+}
+
+#new-YorkB-Text{
+    font-size: xx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -314px;
+    text-decoration: solid;
+    width: 355px;
+    margin-left: 6%;
+}
+
+#bai-FiletB-Text{
+    font-size: xx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -232px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 25%;
+    
+}
+
+#pastrami-beef-burger-image{
+    width: 60%;
+    z-index: 1;
+    position: relative;
+    top: -209px;
+    margin-left: 19%;
+}
+
+#pastrami-beef-burger-text{
+    font-size: xx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -241px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 23%;
+}
+
+#Texan-Burger-image{
+    width: 50%;
+    margin-left: 25%;
+    top: -222px;
+    
+}
+
+#Texan-Burger-Text{
+    top: -254px;
+    margin-left: 24%;
+
+}
+
+#beef-burger-image{
+    margin-left: 26%;
+    top: -237px;
+
+}
+
+#beef-burger-Text{
+    margin-left: 31%;
+    top: -277px;
+}
+
+#Le-Petit-Fondu-burger{
+    width: 46%;
+    z-index: 1;
+    position: relative;
+    top: -234px;
+    margin-left: 25%;
+}
+
+#Le-Petit-Fondu-text{
+    margin-left: 23%;
+    top: -284px;
+}
+
+#mccroissant-image{
+    width: 60%;
+    z-index: 1;
+    position: relative;
+    top: -250px;
+    margin-left: 22%;
+}
+
+#McCrossiant-text{
+    margin-left: 25%;
+    top: -313px;
+}
+
+#crossiantS2{
+    margin-top: -65%;
+}
+
+
+#GreekBurgerSlot{
+    width: 70%;
+    z-index: 1;
+    position: relative;
+    top: -275px;
+    margin-left: 15%;
+}
+
+#GreekflagText{
+    font-size: xx-large;
+    color: #fdc220;
+    z-index: 1;
+    position: relative;
+    top: -328px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 30%;
+    font-size: bold;
+}
+
+#mcToasty-image{
+    width: 50%;
+    z-index: 1;
+    position: relative;
+    top: -250px;
+    margin-left: 24%;
+
+}
+
+#mcToasty-text{
+    margin-left: 34%;
+    top: -322px;
+}
+/* 
+code for table
+
+.foodItemInfo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 250px;
+    margin-top: 25px;
+    border-spacing: 0;
+    width: 80%;
+    height: 143px;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 7px;
+    
+}
+
+.foodItemInfo th:first-child{
+    border-radius:10px 0 0 0;
+}
+
+.foodItemInfo th:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+
+
+.foodCollum1{
+    background: rgba(255, 199, 44, 0.6);
+
+}
+
+
+
+.foodCollum2{
+   background: rgba(255, 199, 44, 0.3);
+}
+
+.foodCollum3{
+    background: rgba(255, 199, 44, 0.6); 
+    border-radius: 0 0 0 10px;
+}
+
+.foodCollum4{
+    background: rgba(255, 199, 44, 0.3);
+    border-radius: 0 0 10px 0;
+}
+
+.foodCollum2 p {
+    opacity: 100%;
+}
+
+.foodItemInfo tr th{
+    padding: 7px;
+    
+}
+
+.foodItemInfo tr td{
+    padding: 10px;    
+}
+
+*/
+
+
+
+
+@media only screen and (min-width: 440px) {
+    .flag{
+        height: 280px;
+    }
+
+    #pastrami-beef-burger-image{
+    width: 60%;
+    top: -262px;
+    margin-left: 19%;
+    }
+
+    #pastrami-beef-burger-text{
+        font-size: xx-large;
+        color: #FFC72C;
+        z-index: 1;
+        position: relative;
+        top: -289px;
+        text-decoration: solid;
+        width: fit-content;
+        margin-left: 28%;
+    }
+
+    #bai-filetB-slot{
+        width: 50%;
+        z-index: 1;
+        position: relative;
+        top: -211px;
+        margin-left: 24%;
+    }
+
+    #bai-filetB-Text{
+    font-size: xx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -232px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 28%;
+    }
+
+    #Le-Petit-Fondu-burger{
+        width: 40%;
+        z-index: 1;
+        position: relative;
+        top: -273px;
+        margin-left: 29%;
+    }
+
+    #Le-Petit-Fondu-text{
+        margin-left: 18%;
+        top: -331px;
+    }
+
+    #Texan-Burger-image{
+        width: 50%;
+        margin-left: 25%;
+        top: -253px;
+    }
+
+    #Texan-Burger-Text{
+        top: -324px;
+        margin-left: 18%;
+    }
+
+    #mccroissant-image{
+        width: 50%;
+        z-index: 1;
+        position: relative;
+        top: -290px;
+        margin-left: 24%;
+    }
+
+    #McCrossiant-text{
+        margin-left: 21%;
+        top: -366px;
+    }
+
+   #mcToasty-text{
+    margin-left: 24%;
+    top: -343px;
+   }
+
+
+
+    .randomCodeBox{
+        height: 60px;
+        width: 300px;
+    }
+
+    .qrCodeSection{
+        margin: 2% 0 0 0;
+        font-size: 47px;
+    }
+
+    .burgerSlot{
+    width: 55%;
+    z-index: 1;
+    position: relative;
+    top: -211px;
+    margin-left: 22%;
+    }
+
+    .flagText{
+    font-size: xxx-large;
+    color: #FFC72C;
+    z-index: 1;
+    position: relative;
+    top: -278px;
+    text-decoration: solid;
+    width: fit-content;
+    margin-left: 27%;
+    }
+
+    .sTwo{
+        margin-top: -37%;
+    }
+
+}
+
+
+@media only screen and (max-width: 599px) {
+    .burgerSlot2{
+        display: none;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sOne{
+        display: none;
+
+    }
+
+    .burgerSlot2 img{
+        width: 300px;
+        margin-top: 27%;
+        margin-left: 5%;
+
+    }
+
+    .flagText{
+        margin-top: 275px;
+        font-size: 40px;
+        margin-left: 28%;
+
+    
+    }
+
+    .sTwo{
+        margin-top: 0;
+    }
+
+    .sThree{
+        margin-top: -46%;
+        margin-bottom: 25%;
+    }
+
+    .randomCodeBox{
+        height: 44px;
+        width: 180px;
+    }
+
+    .qrCodeSection{
+        margin: 1% 0 0 0;
+        font-size: 30px;
+    }
+    
+    #new-YorkB-Table{
+        margin-top: -37%;
+        margin-bottom: 25%;
+    }
+
+    #bai-FiletB-Table{
+        margin-top: -36%;
+        margin-bottom: 25%;
+    }
+
+    #new-YorkB-Text2{
+        margin-top: 275px;
+        font-size: 40px;
+        width: 425px;
+        margin-left: 11%;
+    }
+
+    #bai-FiletB-Text2{
+        margin-top: 275px;
+        font-size: 40px;
+        margin-left: 21%;
+    }
+
+    #Ebi-Filet-Text2{
+        margin-left: 20%;
+    }
+
+    #Ebi-Filet-Table{
+     margin-top: -38%;
+     margin-bottom: 25%;
+    }
+
+    #pastrami-beef-burger-text2{
+        margin-left: 12%;
+    }
+
+    #pastrami-beef-burger-Table{
+        margin-top: -38%;
+    }
+
+    #Texan-Burger-image2{
+        margin-left: 18%;
+    }
+
+    #Texan-Burger-Table{
+        margin-top: -38%;
+    }
+
+
+}
+
+

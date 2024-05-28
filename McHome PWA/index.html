@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the page -->
+    <title>Loading...</title>
+
+    <!-- Author and description of the page -->
+    <meta name="author" content="Hexus Co., Chrsityan Borisov">
+    <meta name="description" content="Loading screen for the McHome App">
+
+    <!-- Links to the manifest and and CSS -->
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="stylesheet" href="css/animation.css">
+
+</head>
+
+<body>
+
+    <div class="main-image">
+        <img src="images/mcdonalds-logo-transparent.png" alt="McDonald's logo">
+
+        <img src="images/McHome-text.png" alt="McHome watermark">
+    
+    </div>
+
+
+</body>
+
+<!-- Service worker registration check -->
+<script src="JS/service-worker-checker.js"></script>
+
+<!-- timeout for redirecting after load animation -->
+<script>
+    setTimeout(function () {
+        window.location.href = "login-page.html";
+    }, 2500); // 2500 milliseconds = 2.5 seconds
+</script> 
+
+</html>

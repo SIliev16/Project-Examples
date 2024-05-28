@@ -1,0 +1,68 @@
+:root {
+    --mdred: #2a2929;
+}
+
+* {
+
+    /* border: black solid 2px; */
+}
+
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: var(--mdred);
+}
+
+.main-image img {
+
+    width: 50%;
+    max-height: 100%;
+    /* Ensure the image does not exceed the container's height */
+
+
+}
+
+.main-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the container's height to the full viewport height */
+}
+
+/* here comes the animation bbyyy */
+.main-image img:nth-child(2) {
+    position: absolute;
+    /* Position the second image absolutely */
+    top: 55%;
+    /* Position it vertically at the center */
+    left: 60%;
+    /* Position it horizontally at the center */
+    transform: translate(-50%, -50%);
+    /* Center it precisely */
+    background-color: #2a2929;
+    width: 27%;
+    padding: 1.5%;
+    animation-name: example;
+    animation-duration: 1.5s;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+        top: 55%;
+        left: 100%;
+        border-radius: 3rem;
+    }
+
+    50% {
+        opacity: 1;
+        border-radius: 3rem;
+    }
+
+    100% {
+        top: 55%;
+        left: 60%;
+        border-radius: 0rem;
+    }
+}

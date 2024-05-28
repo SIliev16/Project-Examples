@@ -1,0 +1,40 @@
+
+  
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Stained Glass Poster</title>
+      <style>
+        svg {
+          background-color: #fff;
+          border: 1px solid #000;
+        }
+        
+        .glass-piece{
+          padding:5px;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Stained Glass Poster</h1>
+      <svg width="300" height="300">
+        <rect class="glass-piece" x="50" y="50" width="40" height="40" fill="red" />
+        <circle class="glass-piece" cx="100" cy="100" r="30" fill="blue" />
+        <polygon class="glass-piece" points="150,150 180,180 210,150" fill="green" />
+        <path class="glass-piece" d="M250,200 L280,230 L250,260" fill="purple" />
+        <polygon class="glass-piece" points="80,50 110,50 95,25" fill="blue"/>
+        <polygon class="glass-piece" points="170,50 200,50 185,25" fill="orange"/>
+      </svg>
+      <script>
+        const glassPieces = document.querySelectorAll(".glass-piece");
+        glassPieces.forEach(glassPiece => {
+            glassPiece.addEventListener("mouseover", function () {
+                glassPiece.setAttribute("transform", "translate(0, -10)");
+            });
+            glassPiece.addEventListener("mouseout", function () {
+                glassPiece.setAttribute("transform", "translate(0, 0)");
+            });
+        });
+      </script>
+    </body>
+    </html>

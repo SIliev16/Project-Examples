@@ -1,0 +1,14 @@
+{
+    "name": "Scary Terry",
+    "status": "Dead",
+    "species": "Dream Demon",
+    "gender": "Male",
+    "image": "https://rickandmortyapi.com/api/character/avatar/305.jpeg",
+    "origin": {
+      "name": "N/A"
+    },
+    "location": {
+      "name": "N/A"
+    },
+    "episode_count": 2
+  }

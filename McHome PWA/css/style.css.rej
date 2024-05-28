@@ -1,0 +1,12 @@
+diff a/Product/McHome PWA/css/style.css b/Product/McHome PWA/css/style.css	(rejected hunks)
+@@ -91,10 +91,6 @@
+ }
+ 
+ #item-title1 {
+-=======
+-
+-#item-title1{
+->>>>>>> ee4444e7677bcac660187bb7f5a4891ed189f911
+     position: relative;
+     text-align: center;
+     color: white;

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Logo</title>
+  </head>
+  <body>
+    <svg id="logo" width="200" height="200">
+      <text id="letter-s" x="50" y="100" font-size="90">S</text>
+      <text id="letter-g" x="140" y="100" font-size="90">G</text>
+    </svg>
+    <script>
+       let s = document.getElementById("letter-s");
+        let g = document.getElementById("letter-g");
+        let twistInterval;
+
+        function twist() {
+        let angle = 0;
+        twistInterval = setInterval(function() {
+            s.setAttribute("transform", `rotate(${angle},${s.getAttribute("x")},${s.getAttribute("y")})`);
+            g.setAttribute("transform", `rotate(${-angle},${g.getAttribute("x")},${g.getAttribute("y")})`);
+            angle += 10;
+        }, 50);
+        }
+
+        s.addEventListener("mouseover", twist);
+        g.addEventListener("mouseover", twist);
+        s.addEventListener("mouseout", function(){ clearInterval(twistInterval) });
+        g.addEventListener("mouseout", function(){ clearInterval(twistInterval) });
+    </script>
+  </body>
+</html>

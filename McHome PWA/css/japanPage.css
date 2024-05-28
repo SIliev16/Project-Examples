@@ -1,0 +1,306 @@
+/* -------------------------Sunny's Code, Japan Page------------------------- */
+
+:root {
+    --mdred: #cf240a;
+    --mdorange: #fec208;
+    --mdyellow: #fff10a;
+    --mdvitamin: #ff2d08;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+    /* border: solid black 1px; */
+}
+
+#burger-title {
+    position: relative;
+    text-align: center;
+    bottom: 31%;
+    font-size: 2.5em;
+    color: #FFC72C;
+}
+
+#burger-info {
+    position: relative;
+    text-align: center;
+    bottom: 36%;
+    font-size: 1em;
+}
+
+
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    /*top-remaining*/
+    top: 92%;
+    /*height + remaining = 100%*/
+    background-color: rgba(60, 61, 60, 1);
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0 0;
+}
+
+.navbar a {
+    /* float: left; */
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding:  6%; */
+    padding: 0.8% 5% 1.5% 5%;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.navbar p {
+    font-weight: 200;
+    font-size: 14px;
+    margin: -13% 0 0 0;
+}
+
+.navbar img {
+    width: 100%;
+    height: 5vh;
+    transform: scale(0.7);
+}
+
+ul {
+    display: inline;
+}
+
+.navbar p {
+    /* margin: 0; */
+}
+
+
+
+.index-top-image img {
+    width: 100%;
+    border-radius: 0px 0px 90px 90px;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+#Ebi-filet{
+    width: fit-content;
+    height: fit-content; 
+    padding: 0%;
+}
+
+.ebi-burgerdiv{
+    margin-left: 105px;
+    margin-right: auto;
+    margin-top: -149px;
+    display: block;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 375px) {
+    .ebi-burgerdiv{
+        margin-left: 60px;
+        margin-right: auto;
+    }
+
+    #Ebi-filet{
+        width: 80%;
+    }
+
+    .Flex-grid-scrollbar-items{
+        margin-top: 20px;
+    }
+  }
+  
+  @media (min-width: 376px) and (max-width: 393px) {
+    .ebi-burgerdiv{
+        margin-left: 60px;
+        margin-right: auto;
+    }
+
+    
+    .Flex-grid-scrollbar-items{
+        margin-top: 70px;
+    }
+  }
+  
+  @media (min-width: 394px) and (max-width: 414px) {
+    .ebi-burgerdiv{
+        margin-left: 70px;
+        margin-right: auto;
+    }
+    .Flex-grid-scrollbar-items{
+        margin-top: 70px;
+    }
+  }
+  
+  @media (min-width: 415px) and (max-width: 475px) {
+    .ebi-burgerdiv{
+        margin-left: 90px;
+        margin-right: auto;
+    }
+
+    .Flex-grid-scrollbar-items{
+        margin-top: 100px;
+    }
+  }
+  
+  @media (min-width: 476px) and (max-width: 500px) {
+    .ebi-burgerdiv{
+        margin-left: 130px;
+        margin-right: auto;
+    }
+  }
+
+
+#burger-info{
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-top: -30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#burger-title{
+    margin-top: auto;
+    
+}
+
+#Japanbody{
+    background-color: rgba(189, 0, 0, 0.71);
+    overflow-x: hidden;
+}
+
+.Flex-grid-scrollbar-items{
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+    height: 150px;
+    
+}
+
+.Items-flex-{
+    flex-basis: 20%;
+    padding: 0px;
+    /* display: inline-block; */
+    display: flex;
+    width: fit-content;
+    animation: scroll infinite linear;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+.flex-1{
+    background-color: white;
+    border-radius: 20px;
+    height: 120px;
+    width: 160px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 150px;
+}
+
+.flex-2{
+    background-color: white;
+    border-radius: 20px;
+    height: 120px;
+    width: 160px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#pastrami-burger{
+    width: 160px
+}
+
+#fish-filet{
+    width: 160px;
+}
+
+#item-title1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: large;
+    top:-15%;
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(189, 0, 0, 1);
+}
+
+#item-title2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: large;
+    top:-9%;
+    width: 100%;
+    height: 25%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(189, 0, 0, 1);
+}
+
+#item-price1{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    top:-75%;
+    width: 50%;
+    height: 25%;
+    margin-left: auto;
+    border-radius: 20px 0px 0px 0px;
+    background-color: rgba(189, 0, 0, 1);
+}
+
+#item-price2{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: medium;
+    top:-70%;
+    width: 50%;
+    height: 25%;
+    border-radius:20px 0px 0px 0px;
+    background-color: rgba(189, 00, 00, 1);
+    margin-left: auto;
+}
+
+.japanfacts{
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#factimg{
+    width: 360px;
+    border-radius: 50px;
+}
+
+.factsSection{
+    color: #000;
+    width: 316px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 64px;
+    font-weight: bold;
+    position: relative;
+    margin-top: -203px;
+}
+
+a {
+    text-decoration: none;
+}

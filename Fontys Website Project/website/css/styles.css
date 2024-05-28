@@ -1,0 +1,1364 @@
+:root {    
+ --fontyDefault: #663366; 
+ --fontysBlue: #0076E0;
+ --fontysPink: rgba(230,0,126);
+ --lighterPurple: #91708F;
+ --lightestPurple: #D9CDD9;
+ --white: #fff;
+ --black: #000; 
+ --fontysDefaultLight: #B347B3;
+ --dust: #999999;
+ --light-turquoise: #50B3A4;
+ --dark-turquoise: #29665D;
+ --fontys-grey: #534e44;
+ --fontys-blue: #0076E0;
+ --fontys-light-blue: #42a7ff;
+}
+
+
+
+* {box-sizing: border-box; margin: 0 0; padding: 0 0;}
+
+a{text-decoration: none;}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0 0;
+    padding: 0 0;
+
+    /* added sans serif font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,
+/* body {
+    margin: 0;
+    padding: 0;
+
+} */
+
+
+
+/*                   --  home page --               */
+/*                         (>ᴗ•)                   */
+/* help me, I cannot put myself into working mood */
+
+#jumbotron {
+    position: relative;
+}
+
+#jumbotron img {
+    width: 100%;
+
+}
+
+.campus-img {
+    clip-path: inset(44% 0% 0% 0%);
+    margin-top: -29.4%;
+
+}
+
+#welcome-txt {
+    /* Fixed titles so they look 
+    the same on all pages. I commented
+     the previous code in case it
+     needs to be reworked */
+
+    /* position: absolute;
+    
+    text-shadow: 2px 2px rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 3.9rem;
+    margin: 0 0;
+    bottom: 0px; */
+
+    position: absolute;
+    width: 75%;
+    text-shadow: 2px 2px rgb(0 0 0 / 70%);
+    color: #fff;
+    font-size: 3.9rem;
+    margin: 0 0 2% 3%;
+    bottom: 0px;
+
+}
+
+#promo {
+    margin-top: 10vh;
+}
+
+#promo iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70vh;
+}
+.description{
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+}
+.decorations-txt {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.625rem;
+    font-weight: 500;
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 0 0 7% 0;
+}
+
+.decorations-h2 {
+    font-weight: bolder;
+    font-size: 30pt;
+   margin: 4% 0 3% 0;
+}
+
+/* end of home page */
+/* apply */
+.apply {
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+}
+.apply h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+.apply  p {
+    text-align: justify;
+    font-size: 1.2em;
+  }
+.apply  li {
+    font-size: 1.2em;
+    margin-left: 1.2em;
+  }
+
+.apply  h2 {
+    font-size: 1.5em;
+  }
+
+/***************************/
+/*         NAV BAR         */
+/***************************/
+
+nav {
+    background-color: var(--fontyDefault);
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a img {
+    width: 100%;
+    height: 125%;
+    margin-left: 1vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 4.4vh;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-right: 7vh;
+    font-size: 2.4vh;
+    color: var(--white);
+}
+
+nav ul li:hover {
+    border-bottom: solid 0.3vh var(--white);
+}
+
+.indicator{
+    border-bottom: solid 0.3vh var(--white);
+}
+
+
+/***************************/
+/*         OVERVIEW        */
+/***************************/
+
+.mainOverview{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* title section */
+
+#title{
+    margin-top: 43vh;
+    margin-left: 12vh;
+    font-size: 10vh;
+}
+
+#title h1{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    text-shadow: 2px 2px rgba(0,0,0,.7);
+    color: #fff;
+}
+
+#titleSection{
+    background-image: url(../img/overview/87e6ebbe-04c9-42e4-80fc-8d3e0a6e6e6a_ICT_096761\ hero\ 1920\ x\ 610\ px.jpg);
+    display: flex;
+    height: 76vh;
+}
+
+
+/* timeline section */
+
+.subtitles{
+    margin-top: 12vh;
+    margin-left: 15vh;
+    margin-bottom: 2vh;
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+.overviewText{
+    margin-top: 1vh;
+    max-width: 170vh;
+    margin-left: 15vh;
+    font-size: 1.625rem;
+    text-align: justify;
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+}
+
+#specLink{
+    color: var(--fontysDefaultLight);
+}
+
+.main-timeline{ position: relative; margin-top: 15vh; max-width: 95%; margin: 5vh;}
+.main-timeline:before,
+.main-timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.main-timeline:before{
+    content: "";
+    width: .5vh;
+    height: 100%;
+    background: var(--fontyDefault);
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.main-timeline .timeline{
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline:before,
+.main-timeline .timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.main-timeline .timeline:first-child:before,
+.main-timeline .timeline:last-child:before{
+    content: "";
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    background: var(--lighterPurple);
+    border: .5vh solid var(--fontyDefault);
+    position: absolute;
+    top: 0;
+    right: -2.5vh;
+    z-index: 1;
+}
+.main-timeline .timeline:last-child:before{
+    top: auto;
+    bottom: 0;
+}
+.main-timeline .timeline:last-child:nth-child(even):before{
+    right: auto;
+    left: -2vh;
+    bottom: -.5vh;
+}
+.main-timeline .timeline-content{
+    text-align: center;
+	margin-top: 1vh;
+    position: relative;
+}
+.main-timeline .timeline-content:before{
+    content: "";
+    width: 100%;
+    height: .5vh;
+    background: var(--fontyDefault);
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    z-index: -1;
+}
+.main-timeline .circle{
+    width: 25vh;
+    height: 25vh;
+    border-radius: 50%;
+    background: var(--lighterPurple);
+    border: 1vh solid var(--fontyDefault);
+    float: left;
+	margin-right: 3.5vh;
+    position: relative;
+}
+.main-timeline .circle:before{
+    content: "";
+    width: 5vh;
+    height: 4.5vh;
+    background: var(--fontyDefault);
+    margin: auto;
+    position: absolute;
+    top: 0;
+	right: -4.5vh;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: inset 7px 0 9px -7px #444;
+}
+
+.main-timeline .circle span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    line-height: 268px;
+    font-size: 80px;
+    color: #454344;
+}
+
+.main-timeline .circle span:before,
+.main-timeline .circle span:after{
+    content: "";
+    width: 5vh;
+    height: 7vh;
+    background: #fff;
+    border-radius: 0 0 0 21px;
+    margin: auto;
+    position: absolute;
+    top: -8vh;
+    right: -5.6vh;
+    bottom: 0;
+    z-index: -1;
+}
+.main-timeline .circle span:after{
+    border-radius: 21px 0 0 0;
+    top: 0;
+    bottom: -7vh;
+}
+.main-timeline .circle .img{
+    vertical-align: initial;
+    border-radius: 50%;
+    width: 23vh;
+    height: 23vh;
+}
+.main-timeline .content{
+    display: table;
+	padding-right: 6vh;
+    position: relative;
+}
+.main-timeline .semester{
+    display: block;
+	padding: 1.5vh;
+    margin: 1.5vh 0 7vh 0;
+    background: var(--lighterPurple);
+    border-radius: 7px;
+    font-size: 3.5vh;
+    color: #fff;
+}
+.main-timeline .title{
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: var(--black);
+    margin-top: 0;
+}
+.main-timeline .description{
+    font-size: 1rem;
+    text-align: justify;
+	margin-top: 1.5vh;
+    font-weight: bold;
+    text-align: justify;
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+}
+.main-timeline .icon{
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    background: var(--lighterPurple);
+    border: .5vh solid var(--fontyDefault);
+    position: absolute;
+    top: 10.5vh;
+    right: -2vh;
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content,
+.main-timeline .timeline:nth-child(2n) .circle{
+    float: right;
+}
+.main-timeline .timeline:nth-child(2n) .circle{
+    margin: 0 0 0 3.2vh;
+}
+.main-timeline .timeline:nth-child(2n) .circle:before{
+    right: auto;
+    left: -4vh;
+    box-shadow: -7px 0 9px -7px #444 inset;
+}
+.main-timeline .timeline:nth-child(2n) .circle span:before,
+.main-timeline .timeline:nth-child(2n) .circle span:after{
+    right: auto;
+    left: -5.5vh;
+    border-radius: 0 0 21px 0;
+}
+.main-timeline .timeline:nth-child(2n) .circle span:after{
+    border-radius: 0 21px 0 0;
+}
+.main-timeline .timeline:nth-child(2n) .content{
+    padding: 0 0 0 4.5vh;
+    margin-left: 2px;
+}
+.main-timeline .timeline:nth-child(2n) .icon{
+    right: auto;
+    left: -1.8vh;
+}
+
+.main-timeline .timeline:nth-child(2){
+    margin-top: 50vh;
+}
+.main-timeline .timeline:nth-child(odd){
+    margin: -25vh 0 0 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin-bottom: 25vh;
+}
+.main-timeline .timeline:first-child,
+.main-timeline .timeline:last-child:nth-child(even){
+    margin: 0;
+}
+@media only screen and (max-width: 990px){
+    .main-timeline:before{ left: 100%; }
+    .main-timeline .timeline{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px !important;
+    }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: auto !important;
+        right: -13px !important;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle{
+        float: left;
+        margin: 0 25px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle:before{
+        right: -33px;
+        left: auto;
+        box-shadow: 7px 0 9px -7px #444 inset;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:before,
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        right: -33px;
+        left: auto;
+        border-radius: 0 0 0 21px;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        border-radius: 21px 0 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 40px 0 0;
+        margin-left: 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon{
+        right: -14px;
+        left: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        left: -15px;
+        right: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:before{
+        border-radius: 0 0 21px 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        border-radius: 0 21px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2),
+    .main-timeline .timeline:nth-child(odd),
+    .main-timeline .timeline:nth-child(even){
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .main-timeline:before{ left: 0; }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: -12px !important;
+        right: auto !important;
+    }
+    .main-timeline .circle,
+    .main-timeline .timeline:nth-child(2n) .circle{
+        width: 130px;
+        height: 130px;
+        float: none;
+        margin: 0 auto;
+    }
+    .main-timeline .timeline-content:before{
+        width: 99.5%;
+        top: 68px;
+        left: 0.5%;
+    }
+    .main-timeline .circle span{
+        line-height: 115px;
+        font-size: 60px;
+    }
+    
+    .main-timeline .content,
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 10px;
+    }
+    .main-timeline .semester{
+        margin-bottom: 15px;
+    }
+    .main-timeline .description{
+        text-align: center;
+    }
+} 
+
+/* specialization section */
+
+.containerSpec {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3vh 3vh;
+    grid-auto-flow: row;
+    width: 50vh;
+    height: 64vh;
+    margin-left: 19vh;
+    margin-top: 5vh;
+}
+  
+.specialisation{
+    width: 38vh;
+    height: 25vh;
+}
+
+.specName{
+    margin-left: 2vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: var(--white);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+}
+
+.specialisation img{
+    width: 38vh;
+    height: 25vh;
+}
+
+.black-overlay {
+    position: absolute;
+    margin-left: -38vh;
+    width: 38vh;
+    height: 25vh;
+    background: rgba(0,0,0,.4);
+    transition: all ease .3s;
+}
+
+.ict{
+    margin-left: 2vh;
+    font-size: 2.5vh;
+    color: var(--white);
+}
+
+.specText{
+    position: relative;
+    margin-top: -9vh;
+    z-index: 1;
+}
+
+#academic{
+    margin-top: 3vh;
+}
+
+.img-hover-zoom {
+    height: 25vh; 
+    overflow: hidden;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+    transform: scale(1.3);
+}
+
+.img-hover-zoom:hover .black-overlay{
+    background: rgba(0,0,0,.6);
+}
+
+
+/* teachers section */
+
+.container {
+    display: grid; 
+    grid-template-columns: 2fr 2fr 2fr 2fr; 
+    gap: 8vh; 
+    width: 150vh; 
+    height: 90vh; 
+    margin-left: 25vh;
+    margin-top: 6vh;
+  }
+
+  .box{
+    text-align: center;
+  }
+
+
+  /* apply section */
+
+.applyBtn{
+    background-color: #fff;
+    border: 1px solid #524d43;
+    color: #000;
+    border-radius: 4px;
+    padding: 1vh;
+    margin: 70vh;
+}
+
+.applyBtn span{
+    color: #e40086;
+    font-weight: bolder;
+    font-size: 3.5vh;
+}
+
+#applyInfo{
+    margin-bottom: 5vh;
+}
+
+.applySection{
+    margin-left: 13vh;
+    margin-top: 10vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+
+/***************************/
+/*           FAQ           */
+/***************************/
+
+.faqSection h1{
+    font-size: 6vh;
+    margin-top: 15vh;
+    margin-left: 30vh;
+}
+
+.faqSection p{
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-left: 30vh;
+    max-width: 80vh;
+}
+
+.questions{
+    margin-top: 5vh;
+    margin-left: 30vh;
+}
+
+.accordion {
+    max-width: 145vh;
+    color: var(--black);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 2vh;
+    background-color: var(--white);
+    border-bottom: solid .2vh var(--fontyDefault);
+}
+
+.accordion:nth-child(1){
+    border-top: solid .2vh var(--fontyDefault);
+}
+  
+.active, .accordion:hover {
+    background-color: var(--fontyDefault);
+    color: var(--white);
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: var(--fontyDefault);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+button.accordion.active:after {
+    content: "\2212";
+    color: var(--white);
+}
+
+.panel {
+    max-width: 145vh;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 2vh;
+    margin: 2vh;
+}
+
+
+
+
+nav li {
+    font-weight: 500;
+}
+
+/* text underline animations  (fancier that the ones existing)*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* ________________________________________ */
+
+/* future page stuff (Christiyan B.) */
+
+
+
+#jumbotron-future {
+    position: relative;
+}
+
+#jumbotron-future img {
+    width: 100%;
+
+}
+
+#future-txt {
+    position: absolute;
+    width: 75%;
+    text-shadow: 2px 2px rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 3.9rem;
+    margin: 0 0 2% 3%;
+    bottom: 0px;
+
+}
+
+.future-main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+/* .future-parent-first {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 0 0 5% 0;
+    } */
+    
+.future-parent-second {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+/* collapsible */
+.collapsible-future {
+    background-color: var(--fontyDefault);
+
+    color: var(--fontys-grey);
+    background-color: var(--white);
+
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid;
+    border-color: var(--fontyDefault);
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible-future:hover {
+    background-color: var(--fontyDefault);
+    color: var(--white);
+    border: solid;
+    border-color: var(--fontyDefault);
+    transition: 200ms;
+  }
+  
+  .collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f5f5f5;
+  }
+
+
+.future-collapsible-space {
+    margin: 1% 0 0 0;
+}
+
+.collapsible-content p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.5rem;
+    font-weight: 500; 
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    /* font-weight: bold; */
+    margin: 0 0 3% 0;
+}
+
+.collapsible-future h3 {
+    font-size: 1.650rem ;
+}
+
+.collapsible-content a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--fontyDefault);
+    border: solid;
+    border-color: var(--fontyDefault);
+    margin: 0 0 0 0;
+
+    padding: 0.5%;
+
+    font-size: 11s;
+    font-weight: 600;
+}
+
+.collapsible-content a:hover {
+    text-decoration: none;
+    color: var(--white);
+
+    background-color: var(--fontyDefault);
+    border: solid;
+    border-color: var(--fontyDefault);
+    margin: 0 0 0 0;
+
+    transition: 200ms;
+    
+    
+}
+
+
+.blue-text {
+    /* color: var(--fontys-blue); */
+    
+    color: var(--fontyDefault);
+}
+
+
+.future-p-style p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.625rem;
+    font-weight: 500;
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 0 0 7% 0;
+}
+
+.future-p-style span {
+color: var(--fontysDefaultLight);
+}
+
+.future-main-content-heading h2 {
+    font-weight: bolder;
+    font-size: 30pt;
+   margin: 4% 0 3% 0;
+}
+
+.future-not-limited p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.625rem;
+    font-weight: 500;
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 0 0 5% 0;
+}
+
+
+#below-first-collapsibles {
+    margin: 0 0 7% 0;
+}
+
+/* job position not limited to  */
+
+.extra-job-positions {
+    border: solid;
+    border-color: var(--fontyDefault);
+    margin: 0 0 0 5% ;
+    /* padding: 4%; */
+    text-align: justify;
+}
+
+.extra-job-positions p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1rem;
+    font-weight: 500;
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 5% 0 5% 0; 
+    padding: 0 4% 0 4%;
+}
+
+.extra-job-positions h3 {
+    background-color: var(--fontyDefault);
+    padding: 3% 0 3% 5%;
+    color: var(--white);
+    font-size: x-large;
+}
+
+
+
+
+/* ________________________________________ */
+
+
+/* footer */
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+    margin-top: 10%;
+}
+
+.footer .col {
+    width: 300px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 19px;
+    line-height: 17px;
+    padding: 25px 0px 10px 0px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+.social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+
+/* clearfix do not fucking touch, otherwise the footer will disappear */
+.clearfix {
+    clear: both;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--dust);
+}
+
+.footer a::before {
+    text-decoration: none;
+    color: var(--dust);
+}
+
+.footer li a:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+}
+
+@media only screen and (min-width: 1280px) {
+    .contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1139px) {
+    .contain .social {
+        width: 1000px;
+        display: block;
+    }
+
+    .social h1 {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .footer .col {
+        width: 33%;
+    }
+
+    .footer .col h1 {
+        font-size: 14px;
+    }
+
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .col {
+        width: 50%;
+    }
+
+    .footer .col h1 {
+        font-size: 14px;
+    }
+
+    .footer .col ul li {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .footer .col {
+        width: 100%;
+    }
+}
+/* Campus page (Can I take a picture of a fucking microwave XD */
+#maps{
+    display: block;
+    margin: auto;
+}
+#map-background{
+    width: auto;
+    /* background-color:var(--fontysDefaultLight) ; */
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+#facilities{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(4,100px); /* Create two rows within each column */
+    align-items: center;
+    justify-items: center; /* Center the items horizontally within their grid cells */
+    margin-top: 5%;
+    margin-bottom: 35%;
+    grid-row-gap: 45%;
+}
+#facilities img{
+    width: 45%;
+    background-color: transparent;
+}
+#facilities .item2 ,.item4 ,.item6 ,.item8{
+    width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+
+}
+
+.item1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .item2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .item3 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  
+  .item4 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  
+  .item5 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .item6 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .item7 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+  
+  .item8 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+  
+  .itemText {
+    border: solid;
+    border-color: var(--fontyDefault);
+    margin: 0 0 0 5% ;
+    /* padding: 4%; */
+    text-align: justify;
+}
+
+.itemText p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.2rem;
+    font-weight: 500;
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 2% 0 4% 0; 
+    padding: 0 4% 0 4%;
+}
+
+.itemText h3 {
+    background-color: var(--fontyDefault);
+    padding: 1% 0 1% 5%;
+    color: var(--white);
+}
+#itemText {
+    border: solid;
+    border-color: var(--fontyDefault);
+    /* padding: 4%; */
+    text-align: justify;
+}
+
+#itemText p {
+    text-align: justify;
+    width: 100% ;
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* idk what dis do, but fontys originally uses it */
+    vertical-align: inherit;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin: 2% 0 4% 0; 
+    padding: 0 4% 0 4%;
+}
+
+#itemText h3 {
+    background-color: var(--fontyDefault);
+    padding: 0 0 0 5%;
+    color: var(--white);
+}
+  .imgISSD{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43%;
+  }
+  .textISSD{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--fontys-grey);
+    font-weight: bold;
+
+  }
+  .textComfort{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--fontys-grey);
+    font-weight: bold;
+    margin-top: 5%;
+  }
+  /* This Part of the page is sponsored by RedBoll
+  Long live the cafeine :D */
+  #fac-grid{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create two columns */
+  grid-template-rows: repeat(2, 1fr); /* Create two rows */
+  align-items: center;
+    justify-items: center; /* Center the items horizontally within their grid cells */
+    margin-top: 5%;
+    margin-bottom: -8%;
+    /* grid-row-gap: 5%;
+    grid-column-gap: 5%; */
+}
+#fac-grid img{
+    width: 55%; 
+}
+.fac1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .fac2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .fac3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  
+  .fac4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+    /**************************/
+    /*          Student       */
+    /**************************/
+
+     
+
+    .slideshow-student {
+        padding-top: 85px;
+        padding-left: 85px;
+        position: relative;
+        background: #D9D9D9;
+      }
+
+      .Student-img1{
+        height: 200px;
+        width: 200px;
+
+      }
+
+      .Student-heading{
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        font-weight: bolder;
+        font-size: 15pt;
+       margin: 4% 0 3% 0;
+      }
+     
+ 
+    .word{
+       position: relative;
+        top:-200px;
+       text-align: center;
+    }
+
+    .student-container{
+    display: grid;
+  align-content: space-between;
+  grid-template-columns: auto  auto;
+  gap: 10px;
+    }
+
+    .student-container >img{
+        position: relative;
+     height: 75%;
+     width: 75%;
+     left: 50px;
+
+    }
+
+    /* cambus additions by chris */
+
+    .side-spacing-campus {
+        margin-left: auto;
+        margin-right: auto;
+         /* width: 80%;  */
+        /* some divs have to be fixed
+        in order to make custom widht */
+        /* this page is fucked up beyond recognition */
+    }
